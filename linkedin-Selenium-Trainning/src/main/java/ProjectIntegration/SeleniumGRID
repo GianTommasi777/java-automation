@@ -1,0 +1,20 @@
+- Proxy server that routes commands to remote browser instances
+- It spreads the load of testing across several machines
+- Those Machines can run different browsers and browser version, and different platforms as well
+
+
+How it works
+One server acts as de Hub and routes json formatted test commands
+to one or more registered grid nodes to access browser instances
+
+A hub is a central point from where tests are executed.
+A Hub also provides a list of servers that provide access to browser instances
+or web server nodes
+
+Nodes are where tests are run, each node is a machine that has their own individual
+selenium instances.
+
+Selenium Grid Allow running test in parallel on multiple machines and the ability
+to manage different browser versions and browser configurations centrally
+
+To see how to start a hub and node go to: https://www.selenium.dev/documentation/grid/getting_started/
