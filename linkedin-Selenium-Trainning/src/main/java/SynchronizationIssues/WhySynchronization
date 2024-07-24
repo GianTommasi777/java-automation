@@ -1,0 +1,31 @@
+Why synchronization problems occurs?
+- Browser drivers operate at different speeds
+- ChromeDriver and GeckoDriver are fastest
+
+Where test are executed(Quantity of simultaneous test executed)
+- local machine
+- remote machine
+
+Network speed
+- make a difference in how test execute
+- pages can be slow to render
+
+identify synchronization issue
+- Test gets stuck at a step
+- "No such element Exception" fails test
+
+Not found element issue
+- The element could not be found by the locator specified at the time
+of searching for it
+- the element is not visible or present on the
+page at the time of searching for it
+
+Adding Awaits
+- if the locator has ben correctly specified, the
+solution is to a await
+- Waits slow down the test, and search for the element specified
+only after it becomes available
+
+Types of Await
+- Implicit
+- Explicit

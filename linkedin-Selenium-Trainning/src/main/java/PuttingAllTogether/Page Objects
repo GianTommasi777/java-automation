@@ -1,0 +1,2 @@
+- Allow functionality to be separated into different classes based on area of functionality
+- Benefits: Organize test code and keep test clean and readable

@@ -1,0 +1,27 @@
+A good way yo find child nodes
+
+how we find it?
+- Child Node= Is a node under another node
+- Nth-child= multiple nodes under the same level
+
+
+Find By Child=
+
+    <div id="parent">
+<a id="child" href="/child">Child</a></div>
+
+driver.findElement(By.cssSelector("div#parent a"));
+
+
+Find By Nth-child=
+
+<ul id="list">
+<li>One</li>
+<li>Two</li>
+<li>Three</li>
+</ul>
+
+driver.findElement(By.cssSelector("list li:nth-child(n)"));
+
+"n" son los elementos dentro de la lista. Si quiero encontrar el elemento 2, puedo
+especificar que n = 2

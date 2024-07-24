@@ -1,0 +1,28 @@
+Los mejores locators son:
+- Unique
+- Descriptive
+- Static (Low probabilities to change)
+
+Avoid this Locators:
+- Link Text = Only works if the links are unique
+- Tag Name = Ussually are not unique and descritive
+- Xpath = It's not descriptive
+
+Use this Locators:
+- ID
+- Class
+- Name
+- CSS Selector: This is the most powerful locator, can be used with
+other types of locators. They can locate the most hard-to-find elements
+
+Example
+<input id="q" class="q" name="q">
+
+By ID=
+driver.findElement(By.cssSelector('#q'));
+
+By Class=
+driver.findElement(By.cssSelector('.q'));
+
+By Name=
+driver.findElement(By.cssSelector("input[name='q']"));

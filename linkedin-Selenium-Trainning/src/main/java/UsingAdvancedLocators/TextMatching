@@ -1,0 +1,43 @@
+When there are no descriptive selectors, matching by text is the key.
+
+2 better ways to use a cssSelector based on text:
+
+1- Value= matches text by exact value of selector
+2- Wildcard= Matches text based on a selector or a part of a selector
+
+Recommended Approach
+if it becomes necessary to  match text using cssselector, use the element's value first
+
+If the value it not avaliable for some reason matching text by wildcard it's also acceptable
+
+--------------------------------------------
+Ways to Match Text
+
+Prefix= a[id^='id_prefix_']
+
+Suffix= a[id$='id_sufix']
+
+Substring= a[id*='id_pattern']
+
+Exact Match= a[id='id']
+
+--------------------------------
+By Exact Match=
+    <div id="TextField">
+
+driver.findElement(By.cssSelector("div[id='TextField']"));
+
+By prefix=
+    <div id="TextField_randomId">
+
+driver.findElement(By.cssSelector("div[id^='TextField']"));
+
+By Suffix=
+    <div id="randomId_TextField">
+
+driver.findElement(By.cssSelector("div[id$='TextField']"));
+
+By Substring=
+    <div id="123_textField_randomId">
+
+driver.findElement(By.cssSelector("div[id*='TextField']"))

@@ -1,0 +1,20 @@
+- Waits for a specified amount of time before throwing
+a no such element exception
+- Default wait time is 0.
+- Doesn't depend on a certain element state, just time.
+
+Syntax
+
+Take to parameters(time to wait(INTEGER), time measurement(seconds,microseconds,etc))
+
+driver.manage().timeouts().implicityWait(TimeOut, TimeUnit.SECONDS);
+
+Pros
+- Easy to implement
+- Non-intrusive
+- They can be applied to all elements in a script
+
+Cons
+- Can take up unnecessary time
+-
+

@@ -1,0 +1,24 @@
+Tag & Class=
+<input class="q" type="text">
+
+driver.findElement(By.cssSelector("input.q"));
+
+Tag & ID=
+<input id="q" type="text">
+
+driver.findElement(By.cssSelector("input#q"));
+
+Tag & Attribute=
+<input tye="radio" value="radio button">
+
+driver.findElement(By.cssSelector("input[type='radio']"));
+driver.findElement(By.cssSelector("input[type='radio button']"));
+
+
+Multiple Classes
+
+<button type= "button" class="btn btn-lg btn-primary">
+<button type= "button" class="btn btn-lg btn-success">
+<button type= "button" class="btn btn-lg btn-info">
+
+driver.findElement(By.cssSelector(.btn.btn-lg.btn-success));

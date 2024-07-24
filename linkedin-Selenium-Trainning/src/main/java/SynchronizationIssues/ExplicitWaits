@@ -1,0 +1,17 @@
+- Wait for a specified amount of time for a certain condition
+to be true
+- if the condition is not met at time, throws an Exception
+- Waits for dynamically located elements
+- Gives better options than implicit waits, there are more felxible
+
+Syntax
+
+WebDriverWait wait = new WebDriverWait(driver, 10);
+WebElement element = wait.until(ExpectedConditions.visibility
+OfElementLocated(By.id("element")))
+
+Some Element Conditions
+- elementToBeClickable()
+- elementToBeSelected()
+- presenceOfElementLocated()
+- textToBePresentInElement()
